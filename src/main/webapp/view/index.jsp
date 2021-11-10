@@ -190,15 +190,16 @@ body {
 </head> 
 <body>
 <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-	<a href="#" class="navbar-brand"><i class="fa fa-cube"></i>Experience<b>Bit</b></a>  		
+	<a href="index.jsp" class="navbar-brand"><i class="fa fa-cube"></i>Experience<b>Bit</b></a>  		
 	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<!-- Collection of nav links, forms, and other content for toggling -->
 	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">		
 		<div>
-		<a href="/registration" class="navbar-brand"><i ></i>Registration</a>
-		
+		<a href="/registration" class="navbar-brand"><i >REGISTRATION</i></a>
+		<a href="/log" class="navbar-brand"><i >LOGIN</i></a>
+		<a href="#" class="navbar-brand"><i >ADD</i> </a>
 		</div>
 		<div class="navbar-nav ml-auto">
 			<a href="#" class="nav-item nav-link active"><i class="fa fa-home"></i><span>Home</span></a>
@@ -209,7 +210,7 @@ body {
 			<a href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Messages</span></a>		
 			<a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
 			<div class="nav-item dropdown">
-				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="https://www.tutorialrepublic.com/examples/images/avatar/3.jpg" class="avatar" alt="Avatar"> Antonio Moreno <b class="caret"></b></a>
+				<a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="https://th.bing.com/th/id/OIP.w2McZSq-EYWxh02iSvC3xwHaHa?w=190&h=190&c=7&r=0&o=5&dpr=1.25&pid=1.7" class="avatar" alt="Avatar"> User Profile <b class="caret"></b></a>
 				<div class="dropdown-menu">
 					<a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
 					<a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a>

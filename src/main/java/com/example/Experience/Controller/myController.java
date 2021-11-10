@@ -29,13 +29,17 @@ public class myController {
 	}
 	
 	@RequestMapping("/submission")
-	@ResponseBody
 	public String submission(UserData userdata)
 	{
 		repo.save(userdata);
 		return "succesfull";
 	}
 	
+	@RequestMapping("/log")
+	public String login()
+	{
+		return "login";
+	}
 	
 	
 }
