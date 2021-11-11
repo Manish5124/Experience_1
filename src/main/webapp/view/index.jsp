@@ -199,7 +199,7 @@ body {
 		<div>
 		<a href="/registration" class="navbar-brand"><i >REGISTRATION</i></a>
 		<a href="/log" class="navbar-brand"><i >LOGIN</i></a>
-		<a href="#" class="navbar-brand"><i >ADD</i> </a>
+		<a href="/inter" class="navbar-brand"><i >ADD</i> </a>
 		</div>
 		<div class="navbar-nav ml-auto">
 			<a href="#" class="nav-item nav-link active"><i class="fa fa-home"></i><span>Home</span></a>

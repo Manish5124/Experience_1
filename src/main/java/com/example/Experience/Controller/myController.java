@@ -5,7 +5,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.example.Experience.dao.CompanyDatadao;
 import com.example.Experience.dao.UserDatarepo;
+import com.example.Experience.model.CompanyData;
 import com.example.Experience.model.UserData;
 
 
@@ -14,6 +16,9 @@ public class myController {
 	
 	@Autowired
 	UserDatarepo repo;
+	
+	@Autowired
+	CompanyDatadao re;
 	
 	
 	@RequestMapping("/")
@@ -35,10 +40,25 @@ public class myController {
 		return "succesfull";
 	}
 	
+	@RequestMapping("/sub")
+	@ResponseBody
+	public String sub(CompanyData companydata)
+	{
+		re.save(companydata);
+		return "succesfull";
+	}
+	
+
 	@RequestMapping("/log")
 	public String login()
 	{
 		return "login";
+	}
+	
+	@RequestMapping("/inter")
+	public String inter()
+	{
+		return "interview";
 	}
 	
 	

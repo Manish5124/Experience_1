@@ -103,7 +103,7 @@ body {
 </head>
 <body>
 <div class="signup-form">
-    <form action="/submission" method="post">
+    <form action="#" method="post">
 		<h2>Login form</h2>
 		
 		        <div class="form-group">
