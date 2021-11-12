@@ -1,9 +1,15 @@
 package com.example.Experience.Controller;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.example.Experience.dao.CompanyDatadao;
 import com.example.Experience.dao.UserDatarepo;
@@ -41,11 +47,10 @@ public class myController {
 	}
 	
 	@RequestMapping("/sub")
-	@ResponseBody
 	public String sub(CompanyData companydata)
 	{
 		re.save(companydata);
-		return "succesfull";
+		return "showData";
 	}
 	
 
@@ -59,7 +64,35 @@ public class myController {
 	public String inter()
 	{
 		return "interview";
+		
 	}
 	
+//	 @GetMapping("/company/{id}")
+//	    public Optional<CompanyData> getCompanyById(
+//	        @PathVariable(value = "id") int id)
+//	    {
+//	        return re.findById(id);
+//	    }
+	 
+	 
+	@RequestMapping("/show")
+		public ModelAndView show()
+		{
+			ModelAndView mv = new ModelAndView();
+			List<UserData> data = repo.findAll();
+			mv.addObject("data", data);
+			mv.setViewName("view");	
+			return mv;
+		}
 	
+	 @RequestMapping("/showData")
+	public ModelAndView showData()
+	{
+		ModelAndView mv = new ModelAndView();
+		List<CompanyData> datalist = re.findAll();
+		mv.addObject("data", datalist);
+		mv.setViewName("companyview");	
+		return mv;
+	
+	}
 }
