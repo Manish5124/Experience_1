@@ -49,8 +49,8 @@ public class myController {
 	@RequestMapping("/sub")
 	public String sub(CompanyData companydata)
 	{
-		re.save(companydata);
-		return "showData";
+		
+		return "login";
 	}
 	
 
@@ -66,6 +66,9 @@ public class myController {
 		return "interview";
 		
 	}
+
+	
+		
 	
 //	 @GetMapping("/company/{id}")
 //	    public Optional<CompanyData> getCompanyById(
