@@ -66,7 +66,13 @@ public class myController {
 		return "interview";
 		
 	}
-	
+
+	@RequestMapping("/name")
+	public String in()
+	{
+		return "company";
+		
+	}
 //	 @GetMapping("/company/{id}")
 //	    public Optional<CompanyData> getCompanyById(
 //	        @PathVariable(value = "id") int id)
